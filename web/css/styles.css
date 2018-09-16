@@ -1,0 +1,152 @@
+.north {
+	display: inline-block;
+	height: 225px;
+	width: 100%;
+}
+.north > .img-container {
+	display: inline-block;
+	width: 225px;
+}
+
+.north > .img-container > img {
+	height: 100%;
+}
+
+.north > .desc {
+	width: 700px;
+	height: 100%;
+	margin-left: 50px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: justify;
+}
+
+.north > .slide {
+	display: inline-block;
+	width: 400px;
+	color: white;
+	position: relative;
+	float: right;
+}
+
+.north > .slide > img {
+	width: 100%;
+	height: 100%;
+}
+
+.north > .slide > .text-container {
+	position: absolute;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	bottom: 0;
+	padding: 8px;
+	width: 100%;
+	background-color: rgba(0,0,0,.5);
+}
+
+.south {
+	display: inline-block;
+	width: 100%;
+}
+.northwest {
+	display: inline-block;
+	width: 49.5%;
+}
+.northeast {
+	display: inline-block;
+	width: 49.5%;
+}
+
+html, body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+.wrapper {
+	min-height: 100%;
+}
+
+.content {
+	height: 100%;
+	overflow: hidden;
+}
+
+#weather {
+	display: inline-block;
+	width: 1500px;
+}
+
+#news {
+	display: inline-block;
+	width: 380px;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+#news.* {
+	padding: 0px;
+	margin: 0px;
+	display: block;
+}
+.rss {
+	display: block;
+	font-family: sans-serif;
+	color: #222222;
+	font-size: 13px;
+}
+.rss > .title {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 10px 0px;
+}
+.rss > .item {
+	padding: 10px;
+	margin-bottom: 15px;
+}
+.rss > .item > .link, .rss > .item > .pubDate {
+	color: #888888;
+	font-size: 12px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+.rss > .item > .link {
+	float: right;
+	text-align: right;
+	display: none;
+}
+.rss > .item > .pubDate {
+	float: left;
+	width: 100%;
+}
+.rss > .item > .title {
+	color: #ff5a60;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.rss > .item > .description {
+	margin-bottom: 10px;
+}
+.rss > .item > .category {
+	border-radius: 3px;
+	padding: 2px 4px;
+	display: inline-block;
+	color: #888888;
+	transition: color 0.3s linear;
+}
+.rss > .item > .category:hover {
+	color: #222222;
+}
+
+.rss > .item > .description > img {
+	float: left;
+	margin-right: 10px;
+	width: 75px;
+}
+
+.rss > .item > .description > div > a {
+	display: none;
+}

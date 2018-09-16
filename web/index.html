@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
+		<script src="rss.js"></script>
+		<script src="images.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="content" id="weather">
+				<div class="north">
+					<div class="img-container">
+						<img src="https://cdn.freebiesupply.com/logos/large/2x/airbnb-2-logo-png-transparent.png">
+					</div>
+					<div class="desc">
+						<h1>Welcome!</h1>
+						<p>Thank you for choosing AirBnB for your travel needs. If you need anything at all, please let me know! You can contact me by phone, email, or message through the Airbnb app. There are cards in your room with my contact information, as well as check out instructions and the WiFi information. Make yourself at home! If you need any tips for things to do in the city, check out the travel brochures on the table or some of the highlights to the right.</p>
+					</div>
+					<div class="slide">
+						<img id="slide">
+						<div class="text-container">
+							<span id="slide-text"></span>
+						</div>
+					</div>
+				</div>
+				<div class="northwest">
+					<script type='text/javascript' src='https://darksky.net/widget/default/35.7113,-78.6142/us12/en.js?width=100%&height=350&title=Garner, NC&textColor=000000&bgColor=transparent&transparency=true&skyColor=ff5160&fontFamily=Default&customFont=&units=us&htColor=000000&ltColor=C7C7C7&displaySum=yes&displayHeader=no'></script>
+				</div>
+				<div class="northeast">
+					<script type='text/javascript' src='https://darksky.net/widget/graph/35.7113,-78.6142/us12/en.js?width=100%&height=320&title=Full Forecast&textColor=000000&bgColor=FFFFFF&transparency=false&fontFamily=Default&customFont=&units=us&graph=precip_graph&timeColor=000000&tempColor=000000&lineColor=ff5160&markerColor=ff5160'></script>
+				</div>
+				<div class="south">
+					<script src='https://darksky.net/map-embed/@radar,35.762,-78.629,9.js?embed=true&timeControl=false&fieldControl=false&defaultField=radar'></script>
+				</div>
+			</div>
+			<div class="content rss" id="news">
+			</div>
+		</div>
+	</body>
+</html>
