@@ -23,6 +23,7 @@ function sleep(ms) {
 var ids = [];
 
 function loadFeeds() {
+	ids = [];
 	for (let url of feeds) {
 		ids.push(url);
 		feednami.load(url)
@@ -60,7 +61,7 @@ var scrollInterval = 0;
 var scrollTime = 0.1*1000;
 var scrollAmount = 0;
 var maxAmount = 50000;
-var scrollLines = 1;
+var scrollLines = 4;
 
 function clearEntries() {
 	var news = document.getElementById("news");
