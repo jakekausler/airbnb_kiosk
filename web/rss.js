@@ -16,6 +16,8 @@ var feeds = [
 
 var entries = [];
 
+var numEntries = 200;
+
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -24,12 +26,18 @@ var ids = [];
 
 function loadFeeds() {
 	ids = [];
+	entries = [];
 	for (let url of feeds) {
 		ids.push(url);
 		feednami.load(url)
 	    .then(feed => {
 	    	for(let entry of feed.entries){
-	    		entries.push(entry);
+	    		entries.push({
+	    			title: entry.title,
+					pubDate: entry.pubDate,
+					link: entry.link,
+					description: entry.description
+	    		});
 	    	}
 	    	var idx = ids.indexOf(url);
 	    	if (ids !== -1) {
@@ -52,6 +60,7 @@ async function updateFeeds() {
 	entries.sort(function(a, b) {
 		return new Date(b.pubDate) - new Date(a.pubDate);
 	});
+	entries.length = numEntries;
 	for (let entry of entries) {
 		addEntry(entry);
 	}
